@@ -6,7 +6,6 @@ import errno
 import argparse
 
 
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-host', type=str, help="Set host address (default is {})".format(default_host))
@@ -26,7 +25,7 @@ def main():
     sock.listen(1024)
 
     forks = []
-    for x in range(0, DEF_WORKERS_COUNT * cpu_count):
+    for x in range(0, (cpu_count*2+1)):
         pid = os.fork()
         forks.append(pid)
         if pid == 0:

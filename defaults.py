@@ -5,7 +5,6 @@ import os
 default_host = '0.0.0.0'
 default_port = 80
 default_document_root = os.path.dirname(__file__) + '/document_root'
-DEF_WORKERS_COUNT = 2
 DEF_NCPU = 2
 content_types_list = {
     'html': 'text/html',
