@@ -3,7 +3,7 @@ __author__ = 'sp41mer'
 import os
 
 default_host = '127.0.0.1'
-default_port = 8080
+default_port = 80
 default_document_root = os.path.dirname(__file__) + '/document_root'
 DEF_WORKERS_COUNT = 2
 DEF_NCPU = 2
